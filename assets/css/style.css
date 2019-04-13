@@ -65,6 +65,9 @@ body {
   position: relative;
   background-image: url(../images/background/clouds.jpg);
   min-width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contactBackground {
