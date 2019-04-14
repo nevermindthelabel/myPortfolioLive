@@ -41,12 +41,9 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./code.png"
-    />
+    <link rel="icon" type="image/png" sizes="96x96" href="./code.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>About Me</title>
   </head>
   <body data-spy="scroll" data-target=".navbar">
@@ -90,6 +87,9 @@
 
           <hr width="95%" />
           <img
+            data-aos="fade"
+            data-aos-delay="50"
+            data-aos-duration="3000"
             class="profile"
             src="assets/images/profile/professional.jpg"
             alt="Me"
@@ -160,6 +160,9 @@
             <div class="row portfolioImage">
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-left"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/gemGame.PNG"
                   alt="gemGame"
@@ -182,6 +185,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-right"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/trainTime.PNG"
                   alt="trainTime"
@@ -206,6 +212,9 @@
             <div class="row portfolioImage">
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-left"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/movieBot.PNG"
                   alt=""
@@ -224,6 +233,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-right"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/bamazon.png"
                   alt=""
@@ -244,6 +256,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-left"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/friendFinder.PNG"
                   alt=""
@@ -266,6 +281,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-right"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/burger.PNG"
                   alt=""
@@ -288,6 +306,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-left"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/sequelizedBurger.PNG"
                   alt=""
@@ -310,6 +331,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-right"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/trafficMon.PNG"
                   alt=""
@@ -330,6 +354,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-left"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/scrape.PNG"
                   alt=""
@@ -352,6 +379,9 @@
               </div>
               <div class="col-md-6 portfolioColumn">
                 <img
+                  data-aos="slide-right"
+                  data-aos-delay="50"
+                  data-aos-duration="750"
                   class="image"
                   src="assets/images/screenshots/theSimpsons.PNG"
                   alt=""
@@ -394,13 +424,23 @@
             <div class="row">
               <div class="col-lg-12 text-center">
                 <div class="row portfolioImage">
-                  <div class="col-md-6 portfolioColumn">
+                  <div
+                    data-aos="slide-left"
+                    data-aos-delay="50"
+                    data-aos-duration="3000"
+                    class="col-md-6 portfolioColumn"
+                  >
                     <a href="https://github.com/nevermindthelabel"
                       ><i class="fab fa-github"></i
                     ></a>
                     <p>GitHub: nevermindthelabel</p>
                   </div>
-                  <div class="col-md-6 portfolioColumn">
+                  <div
+                    data-aos="slide-right"
+                    data-aos-delay="50"
+                    data-aos-duration="3000"
+                    class="col-md-6 portfolioColumn"
+                  >
                     <a href="https://www.linkedin.com/in/matt-kilcup-515697168/"
                       ><i class="fab fa-linkedin"></i
                     ></a>
@@ -433,5 +473,9 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
