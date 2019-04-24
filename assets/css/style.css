@@ -17,6 +17,20 @@ body {
   max-height: 45px;
 }
 
+.profileBottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logos {
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  max-width: 75px;
+  max-height: 150px;
+}
+
 .fa-github {
   font-size: 35px;
   color: #000000;
