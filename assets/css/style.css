@@ -174,8 +174,6 @@ a {
 }
 
 .profile {
-  float: left;
-  border: 1px solid #000000;
   margin-right: 1em;
 }
 
@@ -189,4 +187,12 @@ a {
 
 .image:hover {
   opacity: 0.3;
+}
+
+iframe {
+  margin: auto;
+}
+
+.row.contact {
+  margin: auto;
 }
