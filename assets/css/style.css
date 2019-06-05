@@ -20,6 +20,7 @@ body {
 .profileBottom {
   display: flex;
   flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -195,4 +196,9 @@ iframe {
 
 .row.contact {
   margin: auto;
+}
+
+.iframe {
+  display: flex;
+  justify-content: center;
 }
