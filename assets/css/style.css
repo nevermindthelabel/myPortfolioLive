@@ -25,11 +25,11 @@ body {
   align-items: center;
 }
 
-.logos {
+.companyImages {
   flex-wrap: wrap;
   margin-bottom: 25px;
   max-width: 75px;
-  max-height: 150px;
+  max-height: 178px;
 }
 
 .fa-github {
@@ -83,18 +83,16 @@ body {
 
 .portfolioBackground {
   position: relative;
-  background-image: url(../images/background/clouds.jpg);
+  background: url(../images/background/clouds.jpg) repeat center center fixed;
   min-width: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .contactBackground {
   position: relative;
-  background-image: url(../images/background/pankaj-patel-561360-unsplash.jpg);
-  background-size: 100%;
+  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) repeat center center fixed;
   min-width: auto;
+  background-size: 100%;
 }
 
 .row.portfolioImage {
@@ -184,6 +182,8 @@ a {
   transition: 0.5s ease;
   backface-visibility: hidden;
   margin: auto;
+  width: 100vw;
+  height: auto;
 }
 
 .image:hover {
