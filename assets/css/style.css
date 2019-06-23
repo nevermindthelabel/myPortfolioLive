@@ -63,12 +63,12 @@ body {
 
 .fa-github-square {
   font-size: 35px;
-  color: #000000
+  color: #000000;
 }
 
 .fa-chrome {
   font-size: 35px;
-  color: #000000
+  color: #000000;
 }
 
 .navbar {
@@ -95,7 +95,8 @@ body {
 
 .contactBackground {
   position: relative;
-  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) repeat center center fixed;
+  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) repeat
+    center center fixed;
   min-width: auto;
   background-size: 100%;
 }
@@ -254,9 +255,9 @@ li {
   padding: 10px;
 }
 
- .effect h3,
+.effect h3,
 .effect p,
-i {
+.effect i {
   -webkit-transform: scale(0.7);
   -ms-transform: scale(0.7);
   transform: scale(0.7);
