@@ -80,23 +80,21 @@ body {
 
 .background {
   position: relative;
-  background: url(../images/background/pankaj-patel-516482-unsplash.jpg) repeat
-    center center fixed;
+  background: url(../images/background/pankaj-patel-516482-unsplash.jpg) no-repeat center center fixed;
   background-size: 100%;
   min-width: auto;
 }
 
 .portfolioBackground {
   position: relative;
-  background: url(../images/background/clouds.jpg) repeat center center fixed;
+  background: url(../images/background/clouds.jpg) no-repeat center center fixed;
   min-width: auto;
   background-size: 100%;
 }
 
 .contactBackground {
   position: relative;
-  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) repeat
-    center center fixed;
+  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) no-repeat center center fixed;
   min-width: auto;
   background-size: 100%;
 }
@@ -118,20 +116,15 @@ li {
   color: #777777;
 }
 
-.background {
-  position: relative;
-  background: url(../images/background/pankaj-patel-516482-unsplash.jpg) repeat
-    center fixed;
-  background-size: 100%;
-  min-width: auto;
-}
-
 .body {
   margin-top: 150px;
   flex: 1 0 auto;
-  border: 3px solid #4285f4;
-  background-color: whitesmoke;
   margin-bottom: 50px;
+}
+
+.normal {
+  border: solid 3px #4285f4;
+  background-color: whitesmoke;
 }
 
 .footer {
@@ -173,18 +166,13 @@ a {
   margin-right: 1em;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  margin: auto;
-  width: 100vw;
-  height: auto;
+img:hover {
+  opacity: 0.5;
 }
 
-.image:hover {
-  opacity: 0.5;
+i:hover {
+  font-size: 50px;
+  transition: 0.5s ease;
 }
 
 iframe {
@@ -265,7 +253,6 @@ li {
   transition: all 0.4s ease-in;
   opacity: 0;
   filter: alpha(opacity=0);
-  color: #fff;
   text-transform: uppercase;
 }
 
