@@ -80,21 +80,21 @@ body {
 
 .background {
   position: relative;
-  background: url(../images/background/pankaj-patel-516482-unsplash.jpg) no-repeat center center fixed;
+  background: url(../images/background/pankaj-patel-516482-unsplash.jpg) repeat center center fixed;
   background-size: 100%;
   min-width: auto;
 }
 
 .portfolioBackground {
   position: relative;
-  background: url(../images/background/clouds.jpg) no-repeat center center fixed;
+  background: url(../images/background/clouds.jpg) repeat center center fixed;
   min-width: auto;
   background-size: 100%;
 }
 
 .contactBackground {
   position: relative;
-  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) no-repeat center center fixed;
+  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) repeat center center fixed;
   min-width: auto;
   background-size: 100%;
 }
