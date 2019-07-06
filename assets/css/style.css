@@ -73,7 +73,7 @@ body {
 
 .fa-youtube {
   font-size: 35px;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .navbar {
@@ -230,13 +230,86 @@ li {
   transition: all 0.4s ease-in;
 }
 
-.effect:hover img {
+.effect.gem:hover img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 .0  0 0 0 0 .27  0 0 0 0 .48  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
   -webkit-transform: scale(1.2, 1.6);
   -ms-transform: scale(1.2, 1.6);
   transform: scale(1.2, 1.6);
   transform-style: preserve-3d;
 }
+
+.effect.train:hover img {
+  filter: opacity(0%);
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.movieBot:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 0.0  0 0 0 0 0.0  0 0 0 0 0.0  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.bamazon:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 1.0 0 0 0 0 0.60 0 0 0 0 0.0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.friend:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 0.2314  0 0 0 0 0.3490  0 0 0 0 0.5961  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.burger:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 0.0 0 0 0 0 1.0 0 0 0 0 1.0  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.sequelize:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 .5 0 0 0 0 .0 0 0 0 0 .5  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.trafficMon:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 1.0 0 0 0 0 1.0 0 0 0 0 0.0  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.simpsons:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 0.50196078431 0 0 0 0 0.0 0 0 0 0 0.0  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
+.effect.reactTraffic:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 1.0 0 0 0 0 0.87058823529 0 0 0 0 0.67843137254 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
+}
+
 
 .effect h3 {
   text-transform: uppercase;
