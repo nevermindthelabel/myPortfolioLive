@@ -71,6 +71,11 @@ body {
   color: #000000;
 }
 
+.fa-youtube {
+  font-size: 35px;
+  color: #FF0000;
+}
+
 .navbar {
   margin-bottom: 5%;
   display: flex;
