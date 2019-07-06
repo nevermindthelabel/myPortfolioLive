@@ -80,7 +80,8 @@ body {
 
 .background {
   position: relative;
-  background: url(../images/background/pankaj-patel-516482-unsplash.jpg) repeat center center fixed;
+  background: url(../images/background/pankaj-patel-516482-unsplash.jpg) repeat
+    center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -98,7 +99,8 @@ body {
 
 .contactBackground {
   position: relative;
-  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) repeat center center fixed;
+  background: url(../images/background/pankaj-patel-561360-unsplash.jpg) repeat
+    center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -164,9 +166,9 @@ p {
   color: #000000;
 }
 
-a {
+/* a {
   text-shadow: 1px 1px #4aaaa5;
-}
+} */
 
 .profile {
   margin-right: 1em;
@@ -204,7 +206,7 @@ li {
   position: relative;
   text-align: center;
   cursor: default;
-  border: 1px solid #fff;
+  margin: 0 3em 5em 0;
 }
 
 .effect .overlay {
@@ -224,12 +226,11 @@ li {
 }
 
 .effect:hover img {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
-  filter: grayscale(1) blur(3px);
-  -webkit-filter: grayscale(1) blur(3px);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0 0 0 0 .0  0 0 0 0 .27  0 0 0 0 .48  0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  -webkit-transform: scale(1.2, 1.6);
+  -ms-transform: scale(1.2, 1.6);
+  transform: scale(1.2, 1.6);
+  transform-style: preserve-3d;
 }
 
 .effect h3 {
