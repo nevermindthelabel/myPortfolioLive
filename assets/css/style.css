@@ -171,10 +171,6 @@ p {
   color: #000000;
 }
 
-/* a {
-  text-shadow: 1px 1px #4aaaa5;
-} */
-
 .profile {
   margin-right: 1em;
 }
@@ -309,7 +305,6 @@ li {
   transform: scale(1.2, 1.6);
   transform-style: preserve-3d;
 }
-
 
 .effect h3 {
   text-transform: uppercase;
