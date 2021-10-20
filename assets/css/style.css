@@ -1,14 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+.dark {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #ccc;
+  --bg-color: #000;
+  --heading-color: #818cab;
+}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 main {
   flex: 1 0 auto;
   height: 100%;
-  margin: 24px auto;
+  /* margin: 24px auto; */
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  transition: 0.6s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  top: 5px;
+  left: 5px;
+  background-color: #f9d71c;
+  opacity: 0.9;
+  box-shadow: 0px 0px 40px 15px white;
+  transition: 0.6s;
+}
+
+input:checked + .slider {
+  /* background-color: #2196f3; */
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translate(24px) rotate(0deg);
+  box-shadow: 5px 3px 0px 0px #fff;
+  border-radius: 50%;
+  background-color: black;
+  top: 0px;
+  left: 0px;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* .slider.round::after {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform: rotateZ(-50deg);
+  background-color: pink;
+} */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* body {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -66,6 +171,10 @@ li {
 }
 */
 
+.profile {
+  margin: 0 0 1em 0;
+}
+
 .footer {
   font-weight: bold;
   display: flex;
@@ -76,12 +185,6 @@ li {
   width: 100%;
   height: 60px;
 }
-
-/* h1 {
-  margin-left: 15%;
-  font-size: 50px;
-  text-shadow: 3px 3px #4aaaa5;
-} */
 
 /* h2 {
   color: #000000;
@@ -94,10 +197,6 @@ p.body {
 
 p {
   color: #000000;
-}
-
-.profile {
-  margin-right: 1em;
 }
 
 iframe {
@@ -265,3 +364,9 @@ li {
 p.black {
   color: #000000;
 } */
+
+@media (prefers-color-scheme: dark) {
+  /* main {
+    background: #191a19;
+  } */
+}
