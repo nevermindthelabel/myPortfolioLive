@@ -2,17 +2,13 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-138254830-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138254830-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
       gtag('config', 'UA-138254830-1');
     </script>
     <meta charset="UTF-8" />
@@ -21,12 +17,8 @@
     <title>Matt Kilcup</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -34,13 +26,11 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <link rel="icon" type="image/png" sizes="96x96" href="./code.png" />
-
     <!-- <title>About Me</title> -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm">
       <!-- <h1 class="text-white">Matt Kilcup</h1> -->
       <button
         class="navbar-toggler"
@@ -56,10 +46,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a href="/index.html" class="nav-link active">About Me</a>
+            <a href="/" class="nav-link active">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/uses.html">uses</a>
+          </li>
+          <li class="nav-item nav-link theme-switch">
+            <label class="switch" for="theme-switer-checkbox">
+              <input type="checkbox" id="theme-switer-checkbox" />
+              <span class="slider round"></span>
+            </label>
           </li>
         </ul>
       </div>
@@ -75,18 +71,12 @@
             </div>
             <hr width="95%" />
             <div class="row">
-              <div class="col-md-4">
+              <div class="profile col-md-4">
                 <picture>
-                  <source
-                    srcset="assets/images/profile/treesProfile.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="assets/images/profile/treesProfile.jpg"
-                    type="image/jpg"
-                  />
+                  <source srcset="assets/images/profile/treesProfile.webp" type="image/webp" />
+                  <source srcset="assets/images/profile/treesProfile.jpg" type="image/jpg" />
                   <img
-                    class="profile img-fluid"
+                    class="img-fluid"
                     src="assets/images/profile/treesProfile.jpg"
                     alt="Me"
                     width="100%"
@@ -95,45 +85,37 @@
                 </picture>
               </div>
               <div class="col-md-8">
+                <p class="margin">Hi, thank you for stopping by my page! My name is Matt Kilcup.</p>
                 <p class="margin">
-                  Hi, thank you for stopping by my page! My name is Matt Kilcup.
+                  I am a tinkerer at heart that enjoys pushing my skills and abilities by learning new things. My
+                  passion for actualizing ideas and bringing them to fruition dives me and seeing lines of code turn
+                  into something live continues to amaze me. Having years of experience in Business Operations and
+                  Project Management has led to redefining my skills and continuing to build up my experience in
+                  development, to prepare myself for transitioning an avid hobby into something further.
                 </p>
                 <p class="margin">
-                  I am a tinkerer at heart that enjoys pushing my skills and
-                  abilities by learning new things. My passion for actualizing
-                  ideas and bringing them to fruition dives me and seeing lines
-                  of code turn into something live continues to amaze me. Having
-                  years of experience in Business Operations and Project
-                  Management has led to redefining my skills and continuing to
-                  build up my experience in development, to prepare myself for
-                  transitioning an avid hobby into something further.
-                </p>
-                <p class="margin">
-                  Coding and development have always fascinated me, and I am
-                  currently working as a full stack web developer in Phoenix.
+                  Coding and development have always fascinated me, and I am currently working as a full stack web
+                  developer in Phoenix.
                 </p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-9">
                 <p class="margin">
-                  A little more about me, I married my best friend and have four
-                  amazing children. When I am not working I like to build and
-                  tinker with new technologies, I enjoy spending time with my
-                  family, going on camping trips to Flagstaff and Northern
-                  Arizona, attending sporting events, and taking time to enjoy
+                  A little more about me, I married my best friend and have four amazing children. When I am not working
+                  I like to build and tinker with new technologies, I enjoy spending time with my family, going on
+                  camping trips to Flagstaff and Northern Arizona, attending sporting events, and taking time to enjoy
                   life.
                 </p>
                 <p class="margin">
-                  My other technology interest is Linux, especially Arch Linux.
-                  I love the simplicity of the base distro and the ability to
-                  install and configure to your needs.
+                  My other technology interest is Linux, especially Arch Linux. I love the simplicity of the base distro
+                  and the ability to install and configure to your needs.
                 </p>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-6 centered">
                 <picture>
                   <source
-                    srcset="assets/images/profile/fullStack.webp"
+                    srcset="assets/images/profile/fullStackShrunk.webp"
                     alt="University of Arizona Full Stack developer image"
                     width="180"
                     height="180"
@@ -155,92 +137,16 @@
                 </picture>
               </div>
             </div>
-            <!-- <div class="row">
-              <div class="col-lg-12 text-center mt-4 mb-4">
-                <h3 class="mb-5 text-primary">
-                  Here are a few of my favorite technologies
-                </h3>
-                <div class="profileBottom">
-                  <a
-                    href="https://www.w3schools.com/css/default.asp"
-                    target="_blank"
-                  >
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/css3.svg"
-                      alt="css logo"
-                    />
-                  </a>
-                  <a href="https://www.w3schools.com/html/default.asp">
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/html.svg"
-                      target="_blank"
-                      alt="HTML5"
-                      height="200"
-                    />
-                  </a>
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources"
-                    target="_blank"
-                  >
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/javascript.svg"
-                      target="_blank"
-                      alt="javascript logo"
-                    />
-                  </a>
-                  <a href="https://getbootstrap.com/" target="_blank">
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/bootstrap-4.svg"
-                      alt="bootstrap-4 logo"
-                    />
-                  </a>
-                  <a href="https://reactjs.org/" target="_blank">
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/react.svg"
-                      alt="react logo"
-                    />
-                  </a>
-                  <a href="https://nodejs.org/" target="_blank">
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/nodejs.svg"
-                      alt="nodejs logo"
-                    />
-                  </a>
-                  <a href="https://expressjs.com/" target="_blank">
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/express-109.svg"
-                      alt="expressjs logo"
-                    />
-                  </a>
-                  <a href="https://www.archlinux.org/" target="_blank">
-                    <img
-                      class="companyImages"
-                      src="assets/images/profile/Archlinux-icon-crystal-64.svg.png"
-                      alt="Arch Linux Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
     </main>
     <footer class="footer text-center pt-2">
-      <span class="align-middle"
-        >Developed by Matt Kilcup &copy 2018 -
-        <script>
-          const dt = new Date();
-          document.write(dt.getFullYear());
+      <p class="align-middle">
+        Developed by Matt Kilcup &copy 2018 - <script>
+          document.getElementsByClassName('align-middle')[0].appendChild(document.createTextNode(new Date().getFullYear()));
         </script>
-      </span>
+      </p>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -259,5 +165,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/javascript/index.js"></script>
   </body>
 </html>
