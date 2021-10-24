@@ -9,15 +9,18 @@
   --secondary-color: #536390;
   --font-color: #424242;
   --bg-color: #fff;
-  --heading-color: #292922;
+  --nav-bg-color: #ccc;
+  --footer-bg-color: #eee;
 }
 
 .dark {
   --primary-color: #9a97f3;
   --secondary-color: #818cab;
   --font-color: #ccc;
-  --bg-color: #000;
+  --bg-color: rgba(14, 10, 20, 1);
   --heading-color: #818cab;
+  --nav-bg-color: #292922;
+  --footer-bg-color: #292922;
 }
 body {
   display: flex;
@@ -26,14 +29,15 @@ body {
   background-color: var(--bg-color);
   color: var(--font-color);
 }
+nav {
+  max-height: 100px;
+}
 main {
   flex: 1 0 auto;
   height: 100%;
-  /* margin: 24px auto; */
   background-color: var(--bg-color);
   color: var(--font-color);
 }
-
 .switch {
   position: relative;
   display: inline-block;
@@ -60,6 +64,7 @@ main {
   transition: 0.6s;
 }
 
+/* sun */
 .slider:before {
   position: absolute;
   content: '';
@@ -67,28 +72,22 @@ main {
   width: 26px;
   top: 5px;
   left: 5px;
-  background-color: #f9d71c;
-  opacity: 0.9;
-  box-shadow: 0px 0px 40px 15px white;
+  background-image: url("data:image/svg+xml,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 0 0 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z' style='fill:%23f9d71c;stroke:none;fill-opacity:1'/%3E%3C/svg%3E");
   transition: 0.6s;
 }
 
 input:checked + .slider {
-  /* background-color: #2196f3; */
-  background-color: black;
+  background-color: #f9d71cff;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #ccc;
 }
 
+/* moon */
 input:checked + .slider:before {
   transform: translate(24px) rotate(0deg);
-  box-shadow: 5px 3px 0px 0px #fff;
-  border-radius: 50%;
-  background-color: black;
-  top: 0px;
-  left: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M3 12a9 9 0 1 0 9-9c-.46 0-.92.04-1.36.1 1.37.98 2.26 2.58 2.26 4.4a5.403 5.403 0 0 1-9.8 3.14c-.06.44-.1.9-.1 1.36Z' style='fill:%23f4f6f0;stroke:none;fill-opacity:1'/%3E%3C/svg%3E");
 }
 
 /* Rounded sliders */
@@ -102,17 +101,36 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* .slider.round::after {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  transform: rotateZ(-50deg);
-  background-color: pink;
-} */
 .centered {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+  border-bottom: 2px solid #c3c3c3;
+}
+
+.navbar {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  background: var(--nav-bg-color);
+}
+.custom-navbar-btn {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='24' fill='var(--bg-color)'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M3 18h13v-2H3v2zm0-5h10v-2H3v2zm0-7v2h13V6H3zm18 9.59L17.42 12 21 8.41 19.59 7l-5 5 5 5L21 15.59z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top {
+  margin: 1rem 0 0 0;
 }
 /* body {
   display: grid;
@@ -140,12 +158,6 @@ input:checked + .slider:before {
   margin-bottom: 25px;
   max-width: 75px;
   max-height: 178px;
-}
-
-.navbar {
-  display: flex;
-  flex-grow: 1;
-  align-items: flex-end;
 }
 
 #icons {
@@ -180,7 +192,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightslategray;
+  background-color: var(--footer-bg-color);
   text-align: center;
   width: 100%;
   height: 60px;
@@ -361,12 +373,10 @@ li {
   transform: scale(1);
 }
 
-p.black {
-  color: #000000;
-} */
-
-@media (prefers-color-scheme: dark) {
-  /* main {
-    background: #191a19;
-  } */
+*/
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  nav {
+    max-height: none;
+  }
 }

@@ -2,17 +2,13 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-138254830-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138254830-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
       gtag('config', 'UA-138254830-1');
     </script>
     <meta charset="UTF-8" />
@@ -21,12 +17,8 @@
     <title>Matt Kilcup</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -34,48 +26,47 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <link rel="icon" type="image/png" sizes="96x96" href="./code.png" />
-
     <!-- <title>About Me</title> -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <button class="custom-navbar-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a href="/index.html" class="nav-link active">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/uses.html">uses</a>
-          </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link active">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/uses.html">uses</a>
+              </li>
+              <li class="nav-item theme-switch">
+                <label class="switch" for="theme-switer-checkbox">
+                  <input type="checkbox" id="theme-switer-checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </li>
         </ul>
       </div>
     </nav>
     <main>
       <div class="container">
-        <h1>stuff</h1>
-      </div>
+        <div class="body">
+          <div class="container normal">
+            <div class="row">
+              <div class="col-md-12 title">
+                <h2 class="top">Uses</h2>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
     <footer class="footer text-center pt-2">
-      <span class="align-middle"
+      <p class="align-middle"
         >Developed by Matt Kilcup &copy 2018 -
-        <script>
-          const dt = new Date();
-          document.write(dt.getFullYear());
-        </script>
-      </span>
+      </p>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -94,5 +85,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/javascript/index.js"></script>
   </body>
 </html>
